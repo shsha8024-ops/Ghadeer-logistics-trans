@@ -6,7 +6,8 @@ app = Flask(__name__)
 # بيانات دخول بسيطة
 users = {
     "admin": "Star1996",
-    "muhanad": "Muhanad1996",
+    "star": "star1996",
+    "muhanad": "muhanad1996",
     "ghadeer": "logistics2025"
 }
 

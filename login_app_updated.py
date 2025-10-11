@@ -5,10 +5,10 @@ app = Flask(__name__)
 
 # قاعدة بيانات وهمية للمستخدمين
 users = {
-    "admin": "123456",
-    "ghadeer": "logistics2025",
     "admin": "Star1996",
-    "muhanad": "Muhanad1996"
+    "star": "star1996",
+    "muhanad": "muhanad1996",
+    "ghadeer": "logistics2025"
 }
 
 # HTML الخاص بواجهة تسجيل الدخول (نفس تصميم index_modern.html)
