@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>تسجيل الدخول | Ghadeer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Cairo', sans-serif;
+      margin: 0;
+      background: linear-gradient(to left, #e0f2fe, #f1f5f9);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 16px;
+    }
+    .login-container {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      padding: 40px 30px;
+      max-width: 400px;
+      width: 100%;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 24px;
+      color: #1e3a8a;
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+      color: #475569;
+    }
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      margin-bottom: 16px;
+      font-size: 1rem;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #3b82f6;
+      color: white;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #2563eb;
+    }
+    .footer-text {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #64748b;
+    }
+    @media (max-width: 480px) {
+      .login-container {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>تسجيل الدخول</h2>
+    <form>
+      <label for="username">اسم المستخدم</label>
+      <input type="text" id="username" name="username" placeholder="أدخل اسم المستخدم">
+
+      <label for="password">كلمة المرور</label>
+      <input type="password" id="password" name="password" placeholder="••••••••">
+
+      <button type="submit">دخول</button>
+    </form>
+    <div class="footer-text">© 2025 Ghadeer Logistics</div>
+  </div>
+</body>
+</html>

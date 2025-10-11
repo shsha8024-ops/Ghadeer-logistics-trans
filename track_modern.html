@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>تتبع الشحنات | Ghadeer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }}
+    body {{
+      font-family: 'Cairo', sans-serif;
+      background: linear-gradient(to right, #f1f5f9, #e0f7fa);
+      color: #1e293b;
+      padding: 20px;
+    }}
+    header {{
+      background-color: #1e3a8a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }}
+    section {{
+      max-width: 600px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+      text-align: center;
+    }}
+    section h2 {{
+      color: #1e3a8a;
+      margin-bottom: 20px;
+    }}
+    input {{
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }}
+    button {{
+      width: 100%;
+      padding: 12px;
+      background-color: #3b82f6;
+      color: white;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }}
+    button:hover {{
+      background-color: #2563eb;
+    }}
+    .status {{
+      margin-top: 30px;
+      padding: 20px;
+      background-color: #e0f2fe;
+      border-radius: 12px;
+      color: #1e40af;
+      font-weight: bold;
+      display: none;
+    }}
+    footer {{
+      margin-top: 40px;
+      text-align: center;
+      padding: 20px;
+      background-color: #e2e8f0;
+      color: #64748b;
+    }}
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>تتبع الشحنة</h1>
+    <p>أدخل رقم التتبع الخاص بك للحصول على حالة شحنتك</p>
+  </header>
+
+  <section>
+    <h2>أدخل رقم التتبع</h2>
+    <input type="text" id="tracking-number" placeholder="مثال: GD123456789">
+    <button onclick="track()">تتبع الآن</button>
+
+    <div class="status" id="status-box">جارٍ تحميل حالة الشحنة...</div>
+  </section>
+
+  <footer>
+    جميع الحقوق محفوظة © 2025 غدير
+  </footer>
+
+  <script>
+    function track() {{
+      var statusBox = document.getElementById('status-box');
+      var trackId = document.getElementById('tracking-number').value;
+      if (!trackId) {{
+        statusBox.innerText = "يرجى إدخال رقم تتبع صالح.";
+        statusBox.style.display = "block";
+        statusBox.style.backgroundColor = "#fee2e2";
+        statusBox.style.color = "#b91c1c";
+        return;
+      }}
+      statusBox.innerText = "تم العثور على الشحنة. الشحنة في الطريق إلى وجهتها النهائية.";
+      statusBox.style.display = "block";
+      statusBox.style.backgroundColor = "#e0f2fe";
+      statusBox.style.color = "#1e40af";
+    }}
+  </script>
+
+</body>
+</html>
