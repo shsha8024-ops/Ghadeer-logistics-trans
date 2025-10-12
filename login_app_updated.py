@@ -87,7 +87,7 @@ login_page = """<!DOCTYPE html>
   </style>
 </head>
 <body>
-  <div class="login-container">
+  <div class="home_modren.html">
     <h2>تسجيل الدخول</h2>
     {% if error %}
       <div class="error">{{{{ error }}}}</div>
