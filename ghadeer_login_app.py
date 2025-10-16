@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 # قاعدة بيانات وهمية للمستخدمين
 users = {
-    "admin": "gak123",
+    "admin": "star",
     "star": "star1996",
     "muhanad": "muhanad1996",
     "ghadeer": "logistics2025"
